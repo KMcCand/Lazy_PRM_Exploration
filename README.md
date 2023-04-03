@@ -13,5 +13,11 @@ See the [project report](https://drive.google.com/file/d/1X05W6xjaKobLmBNoxW9U5D
 3. Configure mode, METRIC_TO_PLOT and file names, and run ```python3 plotter.py```
 
 ## Results
-Read [project report](https://drive.google.com/file/d/1X05W6xjaKobLmBNoxW9U5DoaC0lNGMZp/view?usp=sharing) and see [data visualization video](https://drive.google.com/file/d/1foXZOEMhVgtpQhKP5o8E5yAD6b-jcua0/view?usp=sharing).
+1. Overall, Fully-lazy PRM adapts well to dynamic environments and consistently has the fewest
+validity checks. With the current results, Fully-lazy PRM would be our go to in real dynamic environments.
+2. In an environment with a large, impeding shape, Semi-lazy PRM narrows down A* options
+quickly and may outperform Fully-lazy PRM.
+3. While they have high numbers of validity checks in a static environment, Lazy RRT and Lazy EST learn dynamic environments best, improving the most per query with increasing numbers of queries in realistic, slowly changing environments.
+
+See [project report](https://drive.google.com/file/d/1X05W6xjaKobLmBNoxW9U5DoaC0lNGMZp/view?usp=sharing) and [data visualization video](https://drive.google.com/file/d/1foXZOEMhVgtpQhKP5o8E5yAD6b-jcua0/view?usp=sharing).
 
